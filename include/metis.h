@@ -30,7 +30,7 @@
  GCC does provides these definitions in stdint.h, but it may require some
  modifications on other architectures.
 --------------------------------------------------------------------------*/
-//#define IDXTYPEWIDTH 32
+#define IDXTYPEWIDTH 32
 
 
 /*--------------------------------------------------------------------------
@@ -40,7 +40,7 @@
    32 : single precision floating point (float)
    64 : double precision floating point (double)
 --------------------------------------------------------------------------*/
-//#define REALTYPEWIDTH 32
+#define REALTYPEWIDTH 32
 
 
 
@@ -72,10 +72,6 @@ typedef __int64 int64_t;
 #define PRId64       "I64d"
 #define SCNd32       "ld"
 #define SCNd64       "I64d"
-#define INT32_MIN    ((int32_t)_I32_MIN)
-#define INT32_MAX    _I32_MAX
-#define INT64_MIN    ((int64_t)_I64_MIN)
-#define INT64_MAX    _I64_MAX
 #else
 #include <inttypes.h>
 #endif
